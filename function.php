@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("localhost", "root", "", "db_materi1");
+    $conn = mysqli_connect("localhost", "root", "", "db_azqi1");
 
     function query($query){
         global $conn;
@@ -124,8 +124,8 @@
 
 
     }
-
-
+    
+    
     function cari($keyword){
         $query= "SELECT * FROM students
                     WHERE
@@ -135,6 +135,9 @@
                 rayon LIKE '%$keyword%' OR
                 status LIKE '%$keyword%'
                 ";
-        return query($query);
+        
+            return query($query);
+        
+        
     }
 ?>

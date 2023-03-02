@@ -3,9 +3,12 @@
     require 'function.php';
 
     $students = mysqli_query($conn, "SELECT * FROM students");
-
-    if(isset($_POST["cari"])){
+    
+    if(isset($_POST["cari"])== $students ){
       $students =cari($_POST["keyword"]);
+    }
+    else{
+      $error =true;
     }
 ?>
 
@@ -25,13 +28,15 @@
       <div class="card-body">
         <h2>This your Data!</h2>
         <br>
-        <div class="search">
+        
         <form action="" method="post">
+          <div class="search">
             <input type="text" name="keyword" size="40" autofocus placeholder="input search keyword.."
           autocomplete="off">
           <button type="submit" name="cari"><img src="img/srch.png"></button>
-        </form>
         </div>
+      
+        </form>
         <br>
         <table class="table table-bordered">
           
