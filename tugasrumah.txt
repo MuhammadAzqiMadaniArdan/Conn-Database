@@ -1,0 +1,2 @@
+buat halaman login, lalu masuk kehalaman tampilan data (index.php) lalau buat fitur delete update create.
+Lalu ketika data berhasil muncul tampilan <yakin data mau dihapus>,dan input gambar,menambahkan data pencarian

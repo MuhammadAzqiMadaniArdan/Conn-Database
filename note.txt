@@ -1,0 +1,27 @@
+mysqli_fetch_row()
+mysqli_fetch_assoc()
+mysqli_fetch_array()
+mysqli_fetch_object()
+
+Logic
+     Mengembalikan sebuah indeks angka
+     var_dump (mysqli_fetch_row($hasil));
+
+     Mengembalikan sebuah indeks string yg diambil dari nama field
+     var_dump (mysqli_fetch_assoc($hasil));
+
+     Mengembalikan 2 indeks yaitu string dan angka
+     var_dump (mysqli_fetch_array($hasil));
+
+     Mengembalikan sebuah indeks angka
+     var_dump (mysqli_fetch_object($hasil));
+     while( $cek = mysqli_fetch_assoc($hasil) ){
+         var_dump($cek);
+     }
+
+         //keduanya
+    // var_dump (mysqli_fetch_array($result));
+    
+    //objek ->
+    // var_dump (mysqli_fetch_object($result));
+
